@@ -20,6 +20,10 @@ gifTime:=5000 ; Default GIF visibility duration
 varGIF:=gifBlank
 randomValue:=0
 
+counterPath=%folderPath%\GifRandomizer\Gifs\toDisplay\count.txt
+cpt:=0
+FileReadLine, cpt, %counterPath%, 1
+
 ; Continous loop that check if randomValue have been change.
 ; It will display blank.gif as default and a GIF image when the correct random value is found.
 Loop {
@@ -58,4 +62,16 @@ Loop {
 }
 
 ; change this if you want another keyboard shortcuts
-^j::Random, randomValue, 1 , 4 ; The value min and max can be change. If you want to change the shortcuts go to the README file to find the combination you whant
+^f::
+  Random, randomValue, 1 , 4 ; The value min and max can be change. If you want to change the shortcuts go to the README file to find the combination you whant
+
+  ;Creates txt file if it doesn't exist.
+  IfNotExist, %counterPath%
+    FileAppend,0, %counterPath%
+
+  ;Inputs number of input in cpt variable.
+  FileReadLine, cpt, %counterPath%, 1
+  cpt := ++cpt
+  FileDelete, %counterPath%
+  FileAppend,%cpt%, %counterPath%
+return
