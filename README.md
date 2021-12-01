@@ -16,7 +16,7 @@ GifRandomizer is a AutoHotkey code that allows a streamer to randomly display a 
 
 - Double clik on the .ahk program
 
-- The program run, by default use ctrl j to active it the program should display a gif and increase the number
+- The program run, by default use ctrl f to active it the program should display a gif and increase the number
 
 - if you want to reset the number, you can either delete count.txt (it will be recreate) or, change the value in this same file to write a 0
 
@@ -35,4 +35,4 @@ You can also change the keyboard shortcuts in the last line of the code, for tha
 - https://www.autohotkey.com/docs/KeyList.htm (for the list of keys available)
 - https://www.autohotkey.com/docs/Hotkeys.htm (for some example)
 
-<span style="color:red"> disclamer : If the keyboard shortcut you have chosen is used for something else, it will be redefined by the program</span>
+Disclamer : If your antivirus have a problem with the program, just add an exception for the program, i'm working on this problem

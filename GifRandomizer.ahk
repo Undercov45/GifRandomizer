@@ -61,8 +61,9 @@ Loop {
   Sleep, gifTime ; The image will be show for a specific time set for each image separately
 }
 
-; change this if you want another keyboard shortcuts
-^f::
+; Change this if you want another keyboard shortcut, change also the shortcut in Send, don't touch the $ if you want to have original keyboard shortcut with Send
+$^f::
+  Send, ^f
   Random, randomValue, 1 , 4 ; The value min and max can be change. If you want to change the shortcuts go to the README file to find the combination you whant
 
   ;Creates txt file if it doesn't exist.
