@@ -6,19 +6,19 @@ GifRandomizer is a AutoHotkey code that allows a streamer to randomly display a 
 
 - First of all, download AutoHotkey in the AutoHotkey's site : https://www.autohotkey.com/
 
-- After that, open the GifRandomizer.ahk with any text software and change the folderPath to match yours
+- After that, open the GifRandomizer.ahk file int the folder with any text software and change the folderPath to match yours
 
 ## Usage
 
 - First, on OBS, create a media source with the blank.gif in the folder Gifs/toDisplay
 
-- Second, on OBS too, create a Text source that read the count.txt in toDisplay
+- Second, on OBS too, create a Text source that read the count.txt in Gifs/toDisplay
 
 - Double clik on the .ahk program
 
-- The program run, by default use ctrl f to active it the program should display a gif and increase the number
+- The program run. By default use ctrl f to active it the program should display a gif and increase the number, if this is not the case, check if the folderPath you wrote is correct
 
-- if you want to reset the number, you can either delete count.txt (it will be recreate) or, change the value in this same file to write a 0
+- If you want to reset the number, you can either delete count.txt (it will be recreate) or, change the value in this same file to write a 0
 
 ## Customizations
 
@@ -34,5 +34,3 @@ You can also change the keyboard shortcuts in the last line of the code, for tha
 
 - https://www.autohotkey.com/docs/KeyList.htm (for the list of keys available)
 - https://www.autohotkey.com/docs/Hotkeys.htm (for some example)
-
-Disclamer : If your antivirus have a problem with the program, just add an exception for the program, i'm working on this problem
